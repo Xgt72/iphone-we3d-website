@@ -55,7 +55,7 @@ export const scrollAnimation = (position, target, isMobile, onUpdate) => {
       scrollTrigger: {
         trigger: ".display-section",
         start: "top bottom",
-        end: "bottom bottom",
+        end: "top top",
         scrub: 2,
         immediateRender: false,
       },
@@ -68,7 +68,7 @@ export const scrollAnimation = (position, target, isMobile, onUpdate) => {
       scrollTrigger: {
         trigger: ".display-section",
         start: "top bottom",
-        end: "bottom bottom",
+        end: "top top",
         scrub: 2,
         immediateRender: false,
       },
