@@ -91,7 +91,7 @@ const WebgiViewer = forwardRef((props, ref) => {
 
     await viewer.addPlugin(GBufferPlugin);
     await viewer.addPlugin(new ProgressivePlugin(32));
-    await viewer.addPlugin(TonemapPlugin);
+    await viewer.addPlugin(new TonemapPlugin(true));
     await viewer.addPlugin(GammaCorrectionPlugin);
     await viewer.addPlugin(SSRPlugin);
     await viewer.addPlugin(SSAOPlugin);
@@ -147,7 +147,7 @@ const WebgiViewer = forwardRef((props, ref) => {
       scrollTrigger: {
         trigger: ".display-section",
         start: "top bottom",
-        end: "bottom bottom",
+        end: "top top",
         scrub: 2,
         immediateRender: false,
       },
@@ -163,7 +163,7 @@ const WebgiViewer = forwardRef((props, ref) => {
       scrollTrigger: {
         trigger: ".display-section",
         start: "top bottom",
-        end: "bottom bottom",
+        end: "top top",
         scrub: 2,
         immediateRender: false,
       },
